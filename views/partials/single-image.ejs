@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include ../partials/head %>
+    </head>
+    <body class="jwm-container Site">
+        <div class="Site-content">
+            <div class="container">
+                <header>
+                    <% include ../partials/jwm-header %>
+                </header>
+            </div>
+
+            <div class="jwm-container">
+                <div class="image-container">
+                    <div class="image-data">
+
+                        <fieldset id="name">
+                            <label for="name">
+                                <i class="material-icons">person_pin</i>
+                            </label>
+                            <span type="text" name="name"><%=data.dataValues.name %>: <%=data.dataValues.description%></span>
+                        </fieldset>
+                    </div>
+
+                    <fieldset id="image">
+                        <img width="100%" src="/uploads/<%=data.dataValues.image%>"/>
+                    </fieldset>
+                    <div id="jwm-comment-div">
+                        <fieldset id="comment">
+                            <label for="name"><i class="material-icons">person_pin</i></label>
+                            <span type="text" name="name"><%=data.dataValues.name%>: </span>
+                            <span type="text" name="comment"><%=data.dataValues.comment%></span>
+                        </fieldset>
+                    </div>
+                    <% for(let i in commentdata) { %>
+                    <p><%= commentdata[i].dataValues.content %></p>
+
+                    <% } %>
+                    <div class="comment-form">
+                        <h1>Add Comment</h1>
+                        <form method="POST" action="/add-comment/<%=data.dataValues.id%>">
+                            <div class="fieldset-div">
+                                <fieldset>
+                                    <label for="">Username:</label>
+                                    <input name="commentername" type="text">
+                                    <label for="">Comment:</label>
+                                    <input name="content" type="text">
+                                </fieldset>
+                                    <button id="add" type="submit">
+                                        <i class="material-icons">send</i>
+                                    </button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+    </body>
+</html>

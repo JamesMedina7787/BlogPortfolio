@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blogs</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./partials/style.css">
+          <%- include partials/_mobile %>
+</head>
+<body>
+<!--     <h1>Inventory of Shoes for <span id="logo">Paymore Inc.</span></h1>-->
+<div class="container">
+    <a href="add-blog.html"><button class="btn-add">Add Blog</button></a>
+    <form method="GET" action="/search"><input type="text" name="search" placeholder="Search" id="search-input"><button><i class="fa fa-search"></i></button></form>
+    <p><%= message %></p>
+    <table>
+      <p>
+      <% for(i in rows) { %>
+<fieldset>
+            <!-- <%= rows[i].dataValues.id %> -->
+<h1 style="font-size:1.73em; color: blue; text-align:center">
+            <%= rows[i].dataValues.title %>
+</h1>
+</fieldset>
+<span style="color:blue;font-style:oblique">
+            <%= rows[i].dataValues.content %>
+</span>
+<br>
+<label style="">
+            <%= rows[i].dataValues.date %>
+</label>
+    </p>
+    <div style="position:relative; left: 45%";left:30px>
+            <form method="POST" action="/delete/<%= rows[i].dataValues.id %>">
+                <button position=relativeclass="btn-del">Remove</button>
+            </form>
+          </div>
+      <!-- <div>
+            <form method="POST" action="/edit/<%= rows[i].dataValues.id %>">
+                <button class="btn-edit">Edit</button>
+</div> -->
+            </form>
+
+
+    <% } %>
+</table>
+<br>
+
+</div>
+</body>
+</html>

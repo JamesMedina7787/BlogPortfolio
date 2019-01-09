@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Login Here</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Seaweed+Script" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body class="dashboard-container Site">
+    <div class="Site-content">
+        <div class="container">
+            <nav class="navbar navbar-fixed-top navbar-expand">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="/heregram">
+                            <i class="material-icons">photo_camera</i> JWM
+                        </a>
+                    </li>
+                </ul>
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/heregram">
+                                <i class="material-icons">
+                                    photo_camera
+                                 </i>
+                            </a>
+                        </li>
+                        <!-- <li><a href="/login">Log In</a></li> -->
+                        <li><a href="/logout">Log Out</a></li>
+                    </ul>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="content-container">
+            <div class="container row">
+                <h3>Hi, Welcome to your Dashboard</h3>
+                <p>Here, you can upload images which will then be added to the Heregram photo feed.</p>
+            </div>
+            <div class="upload-container row">
+                <h4>Image Upload Form</h4>
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <div class="upload-select-div">
+                        <label for="">Name:</label><br>
+                        <input type="text" name="name">
+                        <label for="">Description:</label><br>
+                        <input type="text" name="description">
+                        <label for="">Comment</label>
+                        <input type="text" name="comment">
+                        <br><br><label>File:</label>
+                        <input type="file" name="image">
+                    </div>
+                    <button id="send"><i class="material-icons">send</i></button>
+                </form>
+                <form method="POST" action="/add">
+                  <div id="container">
+                Title: <input type="text" name="title"><br>
+                Body:<input type="textarea" name="content"><br>
+                Date: <input type="date" name="date"><br>
+                <button>submit</button>
+              </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="identity">&#8224; © 2018 jwmBlogs &#8224;</p>
+    </footer>
+</body>
+
+</html>

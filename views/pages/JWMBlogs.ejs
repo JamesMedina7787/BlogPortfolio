@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="jwm-container Site">
+
+        <div class="Site-content">
+            <div class="container">
+                <header>
+                    <% include ../partials/jwm-header %>
+                </header>
+            </div>
+            <div class="jwm-container">
+                <% for (let i in data) {%>
+                <div class="image-container">
+                    <div class="image-data">
+                        <p>
+                            <label>
+                                <i class="material-icons">person_pin</i>
+                            </label>
+                            <%=data[i].dataValues.name%>
+                        </p>
+                        <p>
+                            <label>
+                                <i class="material-icons">info</i>
+                            </label>
+                            <%=data[i].dataValues.description%>
+                        </p>
+                    </div>
+                    <div class="image-buttons-fieldset">
+                        <fieldset>
+                            <form method="POST" action="/single-image/<%=data[i].dataValues.id %>">
+                                <button><i class="material-icons">more_horiz</i></button>
+                            </form>
+                        </fieldset>
+                        <fieldset>
+                            <form class="buttons" method="POST" action='/edit/<%=data[i].dataValues.id%> %>'>
+                                <a href="/edit-upload/<%=data[i].dataValues.id%>">
+                                    <button id="delete-btn" type="button" title="edit image fields">
+                                        <i class="material-icons">edit</i>
+                                    </button>
+                                </a>
+                            </form>
+                        </fieldset>
+                        <fieldset>
+                            <form class="buttons" method="POST" action='/delete/<%= data[i].dataValues.id %>'>
+                                <a href="/delete-upload/<%=data[i].dataValues.id%>">
+                                    <button id="delete-btn" title="delete image fields">
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </a>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <img id="image" width="100%" src='/uploads/<%=data[i].dataValues.image%>' alt="Image"/>
+                    <fieldset>
+                        <div id="jwm-comment-div">
+                            <p>
+                            <label>
+                                <i class="material-icons">person_pin</i>
+                            </label>
+                                <%=data[i].dataValues.name%>: <%=data[i].dataValues.comment%>
+                            </p>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <form method="POST" action="/single-image/<%=data[i].dataValues.id %>">
+                            <button><i class="material-icons">send</i></button>
+                        </form>
+                    <fieldset>
+                </div>
+                <%}%>
+                </div>
+
+
+
+
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+      </div>
+    </body>
+</html>

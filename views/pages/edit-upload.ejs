@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body class="Site">
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <div class="Site-content">
+        <div class="upload-container">
+            <h2>Edit Upload</h2>
+            <form method="POST" action="/update/<%= data.dataValues.id %>">
+                <div class="edit-select-div">
+                    <fieldset>
+                        <label for="">Name:</label>
+                        <input name="name" type="text" value='<%= data.dataValues.name %>'>
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Description:</label>
+                        <input name="description" type="text" value='<%= data.dataValues.description %>'>
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Comment:</label>
+                        <input name="comment" type="text" value='<%= data.dataValues.comment %>'>
+                    </fieldset>
+                </div>
+                <button id="update-btn">
+                    <i class="material-icons">send</i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

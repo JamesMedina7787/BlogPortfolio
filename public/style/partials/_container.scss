@@ -1,0 +1,162 @@
+// dashboard page
+.dashboard-container {
+    background: url('/images/cam-adams-41558-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content-container {
+    margin: 170px auto 70px;
+    width: 87.5%;
+    padding: 5px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+    @media #{$max-767} {
+        width: 84%;
+        margin: 140px auto 30px;
+    }
+    h3,
+    p {
+        text-align: center;
+    }
+    label {
+        margin-bottom: -5px;
+    }
+    input {
+        height: 30px;
+    }
+    input[name='name'] {
+        margin-bottom: 10px;
+    }
+}
+
+// login page
+.login-container {
+    background: url('/images/luca-bravo-177552-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+// signup page
+.signup-container {
+    background: url('/images/henry-be-99471-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container,
+.upload-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: left;
+}
+
+.upload-select-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.upload-container {
+    margin: 0 auto;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+div.form-container {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin: 140px auto 0;
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    label {
+        margin-bottom: 5px;
+    }
+    input {
+        height: 30px;
+    }
+    input[name='username'] {
+        margin-bottom: 10px;
+    }
+    @media #{$max-767} {
+        padding-right: 1px;
+    }
+    @media #{$min-768} {
+        padding-right: 1px;
+    }
+}
+
+// jumbotron which holds login and signup form
+.jumbotron {
+    background: $JumbotronBackground;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 300px;
+    @media #{$max-767} {
+        margin: 0 auto 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// heregram styling
+.jwm-container {
+    background: #fff8dc;
+    width: 90%;
+    margin: 70px auto -15px;
+    @media #{$min-768} {
+        margin: 70px auto 0;
+    }
+}
+
+.image-container {
+    width: 100%;
+    margin: 0 auto 40px;
+    background: #fffff0;
+    border: 1px solid gainsboro;
+}
+
+#image {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#jwm-comment-div {
+    margin: 10px 0 10px 10px;
+}
+
+.comment-data {
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+// comment form in single-image page
+.comment-form {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.fieldset-div fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    label {
+        margin-top: 15px;
+    }
+}

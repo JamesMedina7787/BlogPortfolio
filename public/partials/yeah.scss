@@ -1,0 +1,615 @@
+// $color: blue;
+// $primary: purple;
+//
+// $new : #6FB3FF;
+// $white : purple;
+// $brr:#F6A623;
+// $okay:#7CACDE;
+// $bam:#63B8EE;
+// $shadow:#468CCF;
+// $jek:#468CCF;
+// $bran:#99ddff;
+
+
+$color: #326496;
+// bluish
+$primary: #174D2A;
+// forest green
+$new : #31A1A8;
+// blue
+$white : #475780;
+// greypurple
+$brr:#BEE1CA;
+// smokeygreen
+$okay:#7CACDE;
+// lavender
+$bam:#311EAF;
+// purple
+$shadow:#BBC6E1;
+// lightblue
+$jek:#CCBBE1;
+// lightpink
+$bran:#A0EFBC;
+// lightgreen
+$fonts:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+.buttons{
+  width:400px;
+  height:400px;
+  background:transparent;
+  display:inline-block;
+  position:relative;
+  padding:20px 38px;
+  top:0;
+  font-size:30px;
+  font-family:'Open Sans', Helvetica;
+  border-radius:4px;border-bottom:1px solid rgba(28,227,125,0.5);
+  background:rgba(22,230,137,1);
+  color:#fff;
+  box-shadow:0px 0px 0px rgba(15, 165, 60, 0.1)
+}
+
+@media only screen and (min-width: 500px) {
+  .smallMainMenu{
+    display: none;
+  }
+  .container {
+    width: 60%;
+    background-color: $new;
+    padding-bottom: 20px;
+    margin: 0 auto;
+color:$primary
+  }
+body {
+  font-family: $fonts;
+  display: flex;
+background: $primary;
+color: $jek;
+}
+#shineBody{
+  font-family: AmericanTypewriter-Bold, sans-serif;
+
+background: $color;
+}
+
+#shineContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  background-color: $primary;
+  padding-bottom: 20px;
+  margin: 0 auto;
+
+}
+// Pizza Order Form
+.pizza{
+  background-color: $jek;
+}
+
+#schedule-text {
+  margin: 0px 0px 2px 0px;
+font-size: 20px;
+}
+
+#schedule-text li {
+    display: inline-block;
+    margin: 11px 11px 0px 0px;
+    color: $primary;
+float: left;
+    font-family: $fonts;
+}
+.toppings{
+  display: inline-block;
+  clear:both
+}
+.pizzaRadio{
+  float:left;
+}
+// Pizza Order Form
+h1{
+  text-align: center;
+  position: relative;
+  margin:auto;
+  font-size: 4em;
+  font-weight: bold;
+  color: red
+}
+h2{
+  text-align: center;
+  position: relative;
+  margin:auto;
+  font-size: 2em;
+  font-weight: bold;
+  color: $primary
+}
+.logo{
+
+  width:25%;
+  height: 50px;
+  padding-top: 5%;
+  clear:both;
+}
+
+
+span{
+  .textFloats{
+  color:$color
+}
+}
+#container-login {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#container-login h1 {
+  margin-left: 165px;
+
+}
+#mainMenu{
+font: $fonts;
+width: 25%
+}
+.has-sub nav .tap ul {display: block;
+
+}
+.header {
+  color: $white;
+  font-size: 50px;
+
+}
+
+#header-out {
+  font-size: 50px;
+  color: $white;
+  text-align: center;
+
+}
+
+#header-reg {
+  color: $white;
+  font-size: 42px;
+  margin-left: 160px;
+
+}
+
+.form-group {
+  margin: 0px 300px 0px 165px;
+
+}
+
+.form-group label, input {
+  color: $white;
+
+}
+
+.mrShineHeader {
+  color: $white;
+  margin: 0px 0px 0px 150px;
+  font-size: 112px;
+
+}
+
+.mrShineWelcome{
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  text-align: center;
+
+}
+
+#borderBox {
+  font-family: $fonts;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.50);
+  font-size: 36px;
+  color: $brr;
+  letter-spacing: 2.99px;
+  margin: 20px 150px 0px 150px;
+
+}
+
+#butt {
+  // display: flex;
+  // position: relative;
+  // flex-direction: column;
+  // margin: 40px 200px 40px 200px;
+  background-color: $new;
+
+  // background:transparent;
+  display:block;
+  position:relative;
+  width:400px;
+  height:50px;
+  padding:20px 38px;
+  // top:0;
+  font-size:30px;
+  font-family:'Open Sans', Helvetica;
+  border-radius:4px;border-bottom:1px solid rgba(28,227,125,0.5);
+  background:#6c8486;
+  color:$new;
+  box-shadow:$shadow
+}
+
+
+  .myButton {
+color: $jek; font-size: 12px; line-height: 23px; padding: 13px; border-radius: 22px; font-family: $fonts; font-weight: 700; text-decoration: none solid rgb(68, 68, 68); font-style: normal; font-variant: small-caps; text-transform: capitalize; background-image: radial-gradient(at center center, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 60%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 19px 16px 52px 11px; border: 2px dashed rgb(28, 110, 164); display: inline-block;width: 12em; height:3em; padding: .5px; text-align:center}
+.myButton:hover {
+border: 2px dashed $jek; }
+.myButton:active {
+background: $jek; }
+
+
+
+#white-button a:hover {
+  background-color: $new;
+
+}
+
+
+
+.btn-align-align button {
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 0px 100px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #63B8EE;
+  background: linear-gradient(top,  #63B8EE,  $jek);
+  background: -ms-linear-gradient(top,  #63B8EE,  $shadow);
+  margin-left: 160px;
+
+
+}
+
+.btn-align-align button:hover {
+  background-color: #99ddff;
+
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+
+}
+
+.switch label, h3 {
+  display: inline-block;
+
+}
+
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: #000000;
+
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #6fb4ff;
+
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #99ddff;
+
+}
+
+.switch label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 14px;
+    background-color: rgba(0,0,0,0.38);
+    border-radius: 15px;
+    margin-right: 10px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.1s ease;
+    vertical-align: middle;
+    margin: 0 16px 30px;
+
+}
+
+#shineMainMenu{
+  text-shadow: .01px .01px 0px $okay;
+  box-shadow: .01px .01px .01px $brr;
+  padding: .001px .030px;
+  margin: 0;
+  -moz-border-radius: .010px;
+  -webkit-border-radius: .010px;
+  border-radius: .010px;
+  background: $white;
+  background: linear-gradient(top,  #63B8EE,  $jek);
+  background: -ms-linear-gradient(top,  #63B8EE,  $shadow);
+}
+
+#shineMainMenu li{
+
+	color: $shadow;
+	text-align: center
+ }
+#shineMainMenu a{
+
+    color: $shadow;
+    text-decoration: none;
+	font-family: $fonts;
+
+
+
+border-bottom: 1px dotted gray;
+	text-align: center;
+
+
+}
+
+
+h3 {
+  padding: 20px;
+  font-size: 70px;
+  margin-left: 20px;
+
+}
+
+ .namee{
+    border: 0;
+    height: 2em;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    color: $primary
+}
+
+
+
+#register-id {
+  color: #ffffff;
+  text-align: center;
+  font-family: $fonts;
+
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6FB3FF;
+
+}
+
+.center-btn {
+  font-family: $fonts;
+  float: right;
+  margin: 15px;
+
+}
+
+.center-btn a {
+  font-size: 20px;
+  text-shadow: 1px 1px 0px $okay;
+  box-shadow: 1px 1px 1px $brr;
+  padding: 1px 30px;
+  margin: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #63B8EE;
+  background: linear-gradient(top,  #63B8EE,  $jek);
+  background: -ms-linear-gradient(top,  #63B8EE,  $shadow);
+
+}
+
+.center-btn h5 {
+  margin: 50px;
+
+}
+
+
+.center-btn a:hover {
+  background-color: $bran;
+
+  }
+
+
+
+
+
+
+.main {
+  text-align: center;
+  padding-top: 5%;
+  width:45%;
+  clear: both;
+}
+
+
+
+
+.picture{
+  display:block;
+  position: relative;
+
+
+}
+
+
+#contentss{
+  width:70%;
+  margin-top: 5%;
+}
+span{}
+.column-left{
+width: 40%;
+display: inline-block;
+float: left;
+height:auto;
+position:relative;
+font-size: 2.1em;
+}
+
+.textFloats{
+  margin-left:4%;
+  width: 45%;
+  display:inline;
+ position:relative;
+  float:left;
+  font-size: 1.2em;
+}
+.textFloats1{
+  margin-left:4%;
+  width: 45%;
+  display:inline;
+ position:relative;
+  float:left;
+  font-size: 3.6em;
+  color:$color
+}
+#div{
+  background-color: oldlace;
+}
+#top{
+  height: 100px;
+  background-color: oldlace;
+}
+.right{
+  width:40%;
+  height:auto;
+display:block;
+float: left;
+position:relative;
+}
+.gallery{
+  margin: 20px;
+  width:50%;
+  height:auto;
+
+  display:block;
+  position:relative;
+  float:left;
+  clear: right;
+}
+.gallery :hover{border:orange solid 5px;}
+
+#picture-right{
+  width:auto;
+  height:500px;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+display:inline-block;
+}
+
+.logo{
+  position: relative;
+  display:block;
+float: none
+}
+}
+
+@media (max-width:660px){
+  .logo{display:block;
+  width:55%;
+float: none
+}
+nav li{
+  text-decoration: none;
+display: block;
+  padding:0%;
+}
+ul{padding-left:0%}
+
+.portrait{display:none}
+.column-left, picture-right{
+  float:none;
+  width:100%;
+}
+column-right{
+  margin-left:0%;
+}
+span{color: $white}
+p{color: blue}
+.drink{
+  color: $jek
+}
+.drinkText{
+  color: $shadow
+}
+.mainMenu{
+  display: none;
+}
+#menuCollapsed{
+  display: flex;
+  position: relative;
+  width: 9%;
+
+     height:3em;
+	 	background-image: url(http://samdubery.files.wordpress.com/2010/02/sniper_scope.jpg);
+
+}
+.open{
+.smallMainMenu{
+display: block;
+  text-shadow: .01px .01px 0px $okay;
+  box-shadow: .01px .01px .01px $brr;
+  padding: .01px .030px;
+  margin: .02px;
+  -moz-border-radius: .010px;
+  -webkit-border-radius: .010px;
+  border-radius: .010px;
+  background: $white;
+  background: linear-gradient(top,  #63B8EE,  $jek);
+  background: -ms-linear-gradient(top,  #63B8EE,  $shadow);
+}
+.smallMainMenu a{
+  display: block;
+    color: $jek;
+    text-decoration: none;
+    text-size: .3em;
+    letter-spacing: .2em;
+	font-family: $fonts;
+
+
+
+border-bottom: 1px dotted gray;
+	text-align: center;
+
+
+	 clear: both;
+}
+
+.smallMainMenu li ul{
+  display: block;
+	font-size : 21.5px;
+	color: $white;
+
+	text-align: center
+ }
+}
+
+ #closed{
+   display:none;
+   position :relative;
+   background-color: $white;
+ }
+span{color: $white}
+p{color: $white}
+
+	.showonmobiles {display:block ! important;}
+	.nomobiles {display:none ! important;}
+
+	#menuswitch  {display:block;}
+
+
+	#menuewrapper {display:none ! important;}
+	.topspacer a.fb_link  {display:block; width:20%; float:right;}
+	.topspacer a.fb_link img {max-width:100%; }
+	.topspacer a.logobox  {display:block; width:70%; float:left;}
+	.topspacer a.logobox img {max-width:100%; }
+	.topspacer {background: url(img/header.png) no-repeat; }
+
+	#wrapper    {width: 100%; min-width:100%; left: 0; }
+	.contentbox { 	XXbackground: url(img/bg50.png);}
+	.contentbox .inner {margin:30px 8% 0 8%;}
+	.footerbox .inner {margin:5px 8% 0 8%;}
+}
